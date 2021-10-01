@@ -1,0 +1,89 @@
+/* PC */
+@media (min-width: 1024px) {
+    /* nên chuyển px về em */
+    /* https://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+}
+
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 16px 16px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    .social-list {
+        font-size: 48px;
+    }
+
+    .social-list a {
+        margin: 0 8px;
+    }
+
+    .copyright {
+        font-size: 26px;
+        padding: 16px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt8 {
+        margin-top: 8px  !important;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child { /* lấy thẻ con đầu tiên */
+        display: inline-block;  /* không kế thừa chiều ngang toàn màn hình */
+    }
+
+    /* bỏ absolute */
+    #nav .subnav { 
+        position: inherit;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 16px;
+    }
+}
